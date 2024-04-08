@@ -1,0 +1,127 @@
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(171, 171, 171, 0.249);
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+
+  width: min(500px, 90%);
+  padding: 2rem;
+
+  background-color: var(--bg-accent-500);
+  border-radius: var(--br-sm);
+  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  position: absolute;
+  right: -2rem;
+  top: -2rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+
+  display: grid;
+  place-content: center;
+
+  background-color: var(--bg-accent-500);
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.5);
+
+  transition: background-color 150ms ease-in-out;
+
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: var(--bg-accent-450);
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+.content {
+  color: var(--bg-accent-200);
+  margin-top: 1rem;
+}
+
+.content > span {
+  font-weight: 600;
+}
+
+#username {
+  width: 100%;
+  border: none;
+  padding-block: 0.8rem;
+  padding-inline: 1rem;
+  border-radius: var(--br-sm);
+  margin-top: 2rem;
+
+  font-family: monospace;
+}
+
+#username::placeholder {
+  color: var(--bg-accent-200);
+}
+
+#username:focus {
+  outline: none;
+}
+
+.error{
+    border: 2px solid red !important;
+}
+.error_message {
+  color: red;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.input_container {
+  position: relative;
+}
+
+.saveBtn {
+  color: white;
+
+  float: right;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+
+  background-color: var(--blue-500);
+  border: none;
+  border-radius: var(--br-sm);
+
+  cursor: pointer;
+}
+
+.saveBtn:hover {
+  background-color: var(--blue-600);
+}
+
+.cancel {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  right: 0.8rem;
+  top: 58%;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.2rem;
+  transition: background-color 150ms ease-in-out;
+}
+
+.cancel:hover {
+  background-color: var(--bg-accent-400);
+}

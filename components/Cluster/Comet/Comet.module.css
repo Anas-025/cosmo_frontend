@@ -1,0 +1,24 @@
+.comet {
+  width: 100%;
+  resize: both; /* Allows users to resize the textarea */
+  overflow: auto;
+
+  background-color: var(--bg-accent-500);
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: var(--br-m);
+  border: 1px solid var(--bg-accent-400);
+}
+
+.comet:hover{
+  border-color: var(--bg-accent-350);
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+

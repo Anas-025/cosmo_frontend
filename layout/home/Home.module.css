@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  height: calc(100% - var(--ribbon-height));
+}
+
+.nav {
+  min-width: var(--nav-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding-top: 1rem;
+}
+
+.nav_pane{
+  font-size: 0.8rem;
+
+  min-width: var(--nav-pane-width);
+  max-width: var(--nav-pane-width);
+
+  padding: 1rem;
+}
+.page{
+  display: flex;
+  align-items: baseline;
+  border-radius: var(--br-sm);
+}
+.page:hover{
+  font-weight: 600;
+  cursor: pointer;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header>.title{
+  font-weight: 600;
+}
+
+.ribbon {
+  display: flex;
+  height: var(--ribbon-height);
+}
+.ribbon>.add{
+  display: flex;
+  margin-left: 0.5rem;
+  margin-block: 0.5rem;
+  padding-inline: 0.3rem;
+  border-radius: var(--br-sm);
+  cursor: pointer;
+}
+.ribbon>.add:hover{
+  background-color: var(--bg-accent-400);
+}
+.tab{
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 1.2rem;
+  padding-right: 0.2rem;
+
+  cursor: pointer;
+}
+.tab>.title{
+  margin-right: 0.5rem;
+}
+.tab.active{
+  background-color: var(--bg-accent-500);
+}
+.tab:hover{
+  background-color: var(--bg-accent-400);
+}
+
+.main{
+    flex-grow: 1;
+}
+
+.accent_container{
+    background-color: var(--bg-accent-500);
+    border-right: 1px solid var(--bg-500);
+}

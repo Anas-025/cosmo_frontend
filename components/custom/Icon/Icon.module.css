@@ -1,0 +1,15 @@
+.icon {
+  display: flex;
+  color: white;
+  border-radius: var(--br-sm);
+  cursor: pointer;
+  padding: 0.6rem;
+}
+
+.icon:hover {
+  background-color: var(--bg-500);
+}
+
+.icon.hoverdisabled:hover{
+    background-color: initial;
+}

@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.main > div {
+  flex-shrink: 0;
+  flex-basis: 200px;
+  resize: both;
+}
